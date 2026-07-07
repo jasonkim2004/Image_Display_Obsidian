@@ -25,7 +25,7 @@ https://github.com/user-attachments/assets/183f9768-b72d-4124-8195-f65e124e16f3
 
 3. Go to
 ```
-  Community plugins > Obsidian Chiikawa
+  Community plugins > Image_Display
 ```
 
 4. Enter the vault-relative image path.
