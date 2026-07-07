@@ -2,16 +2,54 @@
   position: fixed;
   left: 160px;
   top: 160px;
-  z-index: 9999;
+  z-index: 20;
   width: 120px;
   height: 120px;
   background: #000;
   border-radius: 8px;
   cursor: grab;
+  overflow: hidden;
   pointer-events: auto;
   user-select: none;
 }
 
+.chiikawa-floating-box.has-image {
+  width: auto;
+  height: auto;
+  background: transparent;
+  overflow: visible;
+}
+
 .chiikawa-floating-box.is-dragging {
   cursor: grabbing;
+}
+
+.chiikawa-floating-box.is-resizing {
+  cursor: nwse-resize;
+}
+
+.chiikawa-floating-image {
+  display: block;
+  max-width: none;
+  max-height: none;
+  pointer-events: none;
+}
+
+.chiikawa-resize-handle {
+  display: none;
+  position: absolute;
+  right: -10px;
+  bottom: -10px;
+  width: 20px;
+  height: 20px;
+  background: var(--interactive-accent);
+  border: 3px solid var(--background-primary);
+  border-radius: 50%;
+  box-sizing: border-box;
+  cursor: nwse-resize;
+  z-index: 1;
+}
+
+.chiikawa-floating-box.has-image.is-selected .chiikawa-resize-handle {
+  display: block;
 }
